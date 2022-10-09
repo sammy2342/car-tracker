@@ -1,0 +1,30 @@
+<%- include('../partials/header') %> 
+
+<form action="/cars" method="POST">
+    <label>
+        Name: 
+        <input type="text" name="name"> 
+    </label>
+    <label>
+        Model: 
+        <input type="text" name="model">
+    </label>
+    <label>
+        Year: 
+        <input type="date" name="year">
+    </label>
+    <label>
+        Price: 
+        <input type="number" name="price">
+    </label>
+    <label >
+        Mileage: 
+        <input type="number" name="mileage">
+    </label>
+    <label>
+        <input type="submit" value="Add Car">
+    </label>
+
+</form>
+
+<%- include('../partials/footer') %> 

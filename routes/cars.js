@@ -1,9 +1,10 @@
 var express = require('express');
 var router = express.Router();
+const carsCtrl = require('../controllers/cars')
+
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+// localhost:3000/cars/new
+router.get('/new', carsCtrl.new)
 
 module.exports = router;
