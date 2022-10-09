@@ -6,7 +6,8 @@ module.exports = {
     new: newCar,
     create, 
     index,
-    show
+    show, 
+    delete: deleteCar
 }
 
 function newCar(req, res) { 
@@ -40,4 +41,10 @@ function show(req, res) {
         })
     })
     
+}
+
+function deleteCar(req, res) { 
+    Car.findByIdAndDelete(req.params.id, function(err, car){
+        res.redirect('/cars')
+    })
 }
