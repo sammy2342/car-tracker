@@ -1,0 +1,31 @@
+<%- include('../partials/header') %> 
+
+
+<h1>All cars</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Price</th>
+            <th>Mileage</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <% cars.forEach( function(c) { %> 
+        <tr>
+            <td><%= c.name %> </td>
+            <td><%= c.model %> </td>
+            <td><%= c.year//.toLocaleDateString() %></td> 
+            <td><%= c.price %> </td>
+            <td><%= c.mileage %> </td>
+            <td><a href="/cars/<%= c._id %> ">car-details</a></td>
+        </tr>
+        <% }) %> 
+    </tbody>
+</table>
+
+
+<%- include('../partials/footer') %> 
