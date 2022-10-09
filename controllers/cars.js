@@ -1,10 +1,12 @@
 
+const car = require('../models/car')
 const Car = require('../models/car')
 
 module.exports = { 
     new: newCar,
     create, 
-    index
+    index,
+    show
 }
 
 function newCar(req, res) { 
@@ -29,4 +31,13 @@ function index(req, res) {
             cars: cars
         })
     })
+}
+
+function show(req, res) { 
+    Car.findById(req.params.id, function(err, car) {
+        res.render('cars/show', {
+            car: car
+        })
+    })
+    
 }

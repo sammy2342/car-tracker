@@ -1,0 +1,51 @@
+<%- include('../partials/header') %> 
+
+<section>
+    <div>Name: </div>
+    <div><%= car.name %> </div>
+    <div>Model: </div>
+    <div> <%= car.model %> </div>
+    <div>Year: </div>
+    <div> <%= car.year %> </div>
+    <div> Price: </div>
+    <div> <%= car.price %> </div>
+    <div> Mileage: </div>
+    <div> <%= car.mileage %> </div>
+</section>
+
+<h2>Reviews</h2>
+<form action="/cars/<%= car._id %>/reviews " method="POST">
+    <label>
+        Review: 
+        <textarea name="content"></textarea>
+    </label>
+    <label>
+        Worth: 
+        <input type="checkbox" name="worth" checked>
+    </label>
+    <input type="submit" value="Add Review">
+</form>
+
+<% if (car.reviews.length) { %> 
+<table>
+    <thead>
+        <tr>
+            <th>Review: </th>
+            <th>Worth: </th>
+        </tr>
+    </thead>
+    <tbody>
+        <% car.reviews.forEach( function(r) { %> 
+        <tr>
+            <td><%= r.content %> </td>
+            <td><%= r.worth %> </td>
+        </tr>
+        <% }) %> 
+    </tbody>
+</table>
+
+<% } else { %> 
+    <h5>No Reviews</h5>
+<% } %> 
+
+<%- include('../partials/footer') %> 

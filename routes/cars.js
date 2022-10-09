@@ -11,5 +11,6 @@ router.post('/', carsCtrl.create)
 //localhost:3000/cars
 router.get('/', carsCtrl.index)
 // localhost:3000/cars/:id
+router.get('/:id', carsCtrl.show)
 
 module.exports = router;
