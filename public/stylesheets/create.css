@@ -122,3 +122,19 @@ input[type=date]:required:invalid::-webkit-datetime-edit {
 input[type=date]:focus::-webkit-datetime-edit {
     color: aliceblue !important;
 }
+
+.button { 
+    color: #66FCF1;
+    background-color: rgba(36, 36, 36, 0.25);
+    padding: 10px;
+    border: 1px solid #66FCF1;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+.button:hover { 
+    color: #fff;
+    cursor: pointer;
+}
+
