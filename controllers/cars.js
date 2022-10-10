@@ -1,5 +1,5 @@
 
-const car = require('../models/car')
+
 const Car = require('../models/car')
 
 module.exports = { 
