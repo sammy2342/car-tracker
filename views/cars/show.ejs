@@ -38,7 +38,7 @@
         <% car.reviews.forEach( function(r) { %> 
         <tr>
             <td><%= r.content %> </td>
-            <td><%= r.worth %> </td>
+            <td><%= r.worth ? 'worth it' : 'Not worth' %> </td>
         </tr>
         <% }) %> 
     </tbody>
