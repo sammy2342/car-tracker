@@ -12,7 +12,7 @@ const reviewSchema = new Schema({
 const carSchema = new Schema({
     name: String,
     model: String, 
-    year: Date, 
+    year: Number, 
     price: Number, 
     mileage: Number, 
     reviews: [reviewSchema]

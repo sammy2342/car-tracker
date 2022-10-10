@@ -1,8 +1,16 @@
 const mongoose = require('mongoose')
 
-const dreamSchema = require('../models/dream')
 
 const Schema = mongoose.Schema
+
+const dreamSchema = new Schema({ 
+    name: String, 
+    model: String, 
+    year: Number,
+}, { 
+    timestamps: true
+})
+
 
 const userSchema = new Schema({
     name: String,
@@ -12,7 +20,7 @@ const userSchema = new Schema({
     },
     email: String, 
     avatar: String,
-    // cars: [dreamSchema],
+    cars: [dreamSchema],
 }, { 
     timestamps: true
 })
