@@ -7,7 +7,8 @@ module.exports = {
     create, 
     index,
     show, 
-    delete: deleteCar
+    delete: deleteCar, 
+    edit
 }
 
 function newCar(req, res) { 
@@ -22,7 +23,7 @@ function create(req, res) {
     car.save( function(err) {
         if(err) console.log(err)
         //we should change this so it will go to the index make sure to chnage it later
-        res.redirect('/cars/new')
+        res.redirect('/cars')
     })
 }
 
@@ -46,5 +47,13 @@ function show(req, res) {
 function deleteCar(req, res) { 
     Car.findByIdAndDelete(req.params.id, function(err, car){
         res.redirect('/cars')
+    })
+}
+
+function edit(req, res) { 
+    Car.findById(req.params.id, function(err, car){
+        res.render('cars/edit', {
+            car: car
+        })
     })
 }
