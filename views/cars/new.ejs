@@ -1,29 +1,53 @@
 <%- include('../partials/header') %> 
+<link rel='stylesheet' href='/stylesheets/create.css' />
 
 <form action="/cars" method="POST">
-    <label>
-        Name: 
-        <input type="text" name="name"> 
-    </label>
-    <label>
-        Model: 
-        <input type="text" name="model">
-    </label>
-    <label>
-        Year: 
-        <input type="date" name="year">
-    </label>
-    <label>
-        Price: 
-        <input type="number" name="price">
-    </label>
-    <label >
-        Mileage: 
-        <input type="number" name="mileage">
-    </label>
-    <label>
-        <input type="submit" value="Add Car">
-    </label>
+
+        <span id="container">
+            <div class="new-container-1">
+                <h1>Add a Car</h1>
+                <div class="border"></div>
+                <div class="border"></div>
+                <div class="border"></div>
+                <div class="border"></div>
+                <div class="border"></div>
+                <div class="border"></div>
+                <div class="border"></div>
+                <div class="border"></div>
+            </div>
+    
+            <div class="new-container">
+                <label class="input-box">
+                    <input type="text" name="name" required="required"> 
+                    <span>Name </span>
+                </label>
+                <label class="input-box">
+                    <input type="text" name="model" required="required">
+                    <span>Model </span>
+                </label>
+                <label class="input-box" id="year">
+                    <input type="date" name="year" required="required">
+                    <span>Year</span>
+                </label>
+                <label class="input-box">
+                    <input type="number" name="price" required="required">
+                    <span>Price</span>
+                </label>
+                <label class="input-box">
+                    <input type="number" name="mileage" required="required">
+                    <span>Mileage</span>
+                </label>
+                <label>
+                    <input type="submit" value="Add Car" required="required">
+                </label>
+            </div>
+        </span>
+        
+
+        
+
+    
+    
 
 </form>
 
