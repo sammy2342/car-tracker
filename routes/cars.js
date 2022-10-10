@@ -16,5 +16,7 @@ router.get('/:id', carsCtrl.show)
 router.delete('/:id', carsCtrl.delete)
 // localhost:3000/cars/:id/edit
 router.get('/:id/edit', carsCtrl.edit)
+// localhost:3000/cars/:id
+router.put('/:id', carsCtrl.update)
 
 module.exports = router;

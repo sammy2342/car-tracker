@@ -8,7 +8,8 @@ module.exports = {
     index,
     show, 
     delete: deleteCar, 
-    edit
+    edit,
+    update
 }
 
 function newCar(req, res) { 
@@ -55,5 +56,13 @@ function edit(req, res) {
         res.render('cars/edit', {
             car: car
         })
+    })
+}
+
+function update(req, res) {
+    // console.log(req.params)this is the id 
+    // console.log(req.body) this is the form we get when we edit
+    Car.findByIdAndUpdate(req.params.id, req.body, function(err, car) { 
+        res.redirect(`/cars/${req.params.id}`)
     })
 }
