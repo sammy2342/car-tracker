@@ -5,7 +5,7 @@ const Schema = mongoose.Schema
 const dreamSchema = new Schema({ 
     name: String, 
     model: String, 
-    year: Number
+    year: Number,
 }, { 
     timestamps: true
 })

@@ -1,0 +1,27 @@
+<%- include('../partials/header') %> 
+
+    <form action="/users/<%= car._id %>/dream ">
+        <div class="new-container">
+            <label class="input-box">
+                <input type="text" name="name" required="required"> 
+                <span>Name </span>
+            </label>
+            <label class="input-box">
+                <input type="text" name="model" required="required">
+                <span>Model </span>
+            </label>
+            <label class="input-box" id="year">
+                <input type="date" name="year" required="required">
+                <span>Year</span>
+            </label>
+            <label class="input-box">
+                <input type="number" name="price" required="required">
+                <span>Price</span>
+            </label>
+            <label>
+                <input type="submit" value="add-a-dream-car" required="required" class="button">
+            </label>
+        </div>
+    </form>
+
+<%- include('../partials/footer') %> 
