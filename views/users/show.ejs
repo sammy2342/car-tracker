@@ -1,7 +1,7 @@
 <%- include('../partials/header') %> 
 
 <link rel='stylesheet' href='/stylesheets/userShow.css' />
-
+    <% if(user) { %> 
     <form action="/users/<%= user._id %>/dream " method="POST">
         <div><h1><%= user.name %></h1></div>
         <img src="<%= user.avatar %> " alt="avatar" referrerpolicy="no-referrer">
@@ -28,5 +28,6 @@
             </label>
         </div>
     </form>
+    <% } %> 
 
 <%- include('../partials/footer') %> 
