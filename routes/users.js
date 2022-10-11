@@ -9,6 +9,6 @@ router.get('/users', userCtrl.index)
 router.get('/users/:id', userCtrl.show)
 
 //localhost:3000/users/:id/dream
-// router.post('/users', userCtrl.create)
+router.post('/users/:id/dream', userCtrl.addDreamCar)
 
 module.exports = router

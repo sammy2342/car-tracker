@@ -7,6 +7,7 @@ const dreamSchema = new Schema({
     name: String, 
     model: String, 
     year: Number,
+    price: Number,
 }, { 
     timestamps: true
 })
@@ -20,7 +21,7 @@ const userSchema = new Schema({
     },
     email: String, 
     avatar: String,
-    cars: [dreamSchema],
+    cars: [],
 }, { 
     timestamps: true
 })

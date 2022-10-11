@@ -1,6 +1,11 @@
 <%- include('../partials/header') %> 
 
-    <form action="">
+<link rel='stylesheet' href='/stylesheets/userShow.css' />
+
+    <form action="/users/<%= user._id %>/dream " method="POST">
+        <div><h1><%= user.name %></h1></div>
+        <img src="<%= user.avatar %> " alt="avatar" referrerpolicy="no-referrer">
+        <div><h1><%= user.cars %></h1> </div>
         <div class="new-container">
             <label class="input-box">
                 <input type="text" name="name" required="required"> 
