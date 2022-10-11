@@ -49,3 +49,90 @@ nav > a.active {
 h4 { 
   margin-left: 20px;
 }
+
+.main { 
+  display: flex;
+  flex-direction: column;
+  height: 83vh;
+  justify-content: center;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding-right: 150px;
+  /* border: 2px solid red; */
+}
+
+button { 
+  width: 150px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(0, 255, 251, 0.9);
+  font-size: 12px;
+  outline: none;
+  padding: 12px;
+  margin-top: 30px;
+}
+
+h1 { 
+  font-size: 50px;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+span { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* border: 2px solid red */
+}
+tbody { 
+  margin-left: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+.card-conatiner { 
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 10px 15px;
+  background-image: url(./ElgP63z.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 70px;
+  /* border: solid 2px red; */
+  
+}
+
+.box-conatiner {
+  /* border: 2px solid rgb(0, 243, 4); */
+  width: 100px;
+  height: 100px;
+}
+
+#card-2 { 
+  margin-top: 90px;
+  background: linear-gradient(rgba(63, 63, 63, 0.3), rgba(63, 63, 63, 0.3)), url(./spofec-rollsroyce-wraith-black-badge-overdose-wallpaper-4k-2021-5k-8k-cars-5257.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#card-3 { 
+  background: linear-gradient(rgba(63, 63, 63, 0.3), rgba(63, 63, 63, 0.3)), url(./HD-wallpaper-bmw-m8-bavarian-car-car-cars-german-car-german-cars-gran-coupe-m8-gran-coupe.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#card-4 { 
+  background: linear-gradient(rgba(63, 63, 63, 0.3), rgba(63, 63, 63, 0.3)), url(./HD-wallpaper-shiny-black-lamborghini-car-blur-background-lamborghini.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
