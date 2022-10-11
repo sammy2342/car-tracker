@@ -60,3 +60,18 @@ h4 {
     padding: 0;
     margin: 2px;
 }
+
+button { 
+    background-color: rgb(193, 0, 161);
+    border: 2px solid rgb(126, 4, 144);
+    outline: 0;
+    color: #fff;
+    padding: 4px;
+    width: 220px;
+    height: 30px;
+}
+
+h1 { 
+    
+    margin-bottom: 80px;
+}
