@@ -4,10 +4,16 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: black;
   color: azure;
+  background: linear-gradient(rgba(137, 137, 137, 0.3), rgba(168, 168, 168, 0.3)), url(./photo-1568605117036-5fe5e7bab0b7.avif);
+  /* background-image: url(./photo-1568605117036-5fe5e7bab0b7.avif); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 a {
-  color: #00B7FF;
+  color: #fff;
 }
 
 .login {
@@ -26,7 +32,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-size: 15px;
+  font-size: 20px;
   height: 40px;
 }
 
@@ -34,7 +40,8 @@ a {
   margin-left: 6px;
   text-decoration: none !important;
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: bold;
 }
 nav > a:hover:not(.active) {
   color: white;
@@ -55,8 +62,8 @@ h4 {
   flex-direction: column;
   height: 83vh;
   justify-content: center;
-  margin-left: 150px;
-  margin-right: 150px;
+  /* margin-left: 150px; */
+  margin-right: 800px;
   padding-right: 150px;
   /* border: 2px solid red; */
 }
@@ -93,7 +100,7 @@ tbody {
   /* border: 2px solid red; */
 }
 
-.card-conatiner { 
+/* .card-conatiner { 
   width: 200px;
   height: 230px;
   display: inline-block;
@@ -113,11 +120,11 @@ tbody {
   /* border: 2px solid rgb(0, 243, 4); */
   width: 100px;
   height: 100px;
-}
+} */
 
-#card-2 { 
+/* #card-2 { 
   margin-top: 90px;
-  background: linear-gradient(rgba(63, 63, 63, 0.3), rgba(63, 63, 63, 0.3)), url(./spofec-rollsroyce-wraith-black-badge-overdose-wallpaper-4k-2021-5k-8k-cars-5257.jpeg);
+  background: linear-gradient(rgba(137, 137, 137, 0.3), rgba(168, 168, 168, 0.3)), url(./spofec-rollsroyce-wraith-black-badge-overdose-wallpaper-4k-2021-5k-8k-cars-5257.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -135,4 +142,4 @@ tbody {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
