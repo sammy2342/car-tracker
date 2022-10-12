@@ -5,6 +5,9 @@ const Schema = mongoose.Schema
 const reviewSchema = new Schema({
     content: String, 
     worth: {type: Boolean, default: false}, 
+    user: {type: Schema.Types.ObjectId, ref: 'User', required: true },
+    userName: String, 
+    userAvatar: String
 }, {
     timestamps: true
 })

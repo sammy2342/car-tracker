@@ -37,11 +37,11 @@ nav {
 }
 
 a {
-  margin-left: 6px;
+  margin-left: 25px;
   text-decoration: none !important;
   font-family: sans-serif;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 500;
 }
 nav > a:hover:not(.active) {
   color: white;
@@ -114,13 +114,13 @@ tbody {
   margin-left: 70px;
   /* border: solid 2px red; */
   
-}
+/* } */
 
 .box-conatiner {
   /* border: 2px solid rgb(0, 243, 4); */
   width: 100px;
   height: 100px;
-} */
+} 
 
 /* #card-2 { 
   margin-top: 90px;

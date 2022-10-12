@@ -38,6 +38,7 @@
     <tbody>
         <% car.reviews.forEach( function(r) { %> 
         <tr>
+            <td class="review-user"><img alt="avatar" src="<%= r.userAvatar %>" referrerpolicy="no-referrer" ><%= r.userName %></td>
             <td><%= r.content %> </td>
             <td><%= r.worth ? 'worth it' : 'Not worth' %> </td>
         </tr>
