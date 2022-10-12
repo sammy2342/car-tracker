@@ -1,7 +1,10 @@
 <%- include('../partials/header') %> 
 <link rel='stylesheet' href='/stylesheets/index.css' />
 
-<h1>All cars</h1>
+<div class="title">
+    <h1>All Cars</h1>
+</div>
+
 <table>
     <thead>
         <tr>
@@ -25,7 +28,7 @@
             <td><%= c.mileage %> </td>
             <td><a href="/cars/<%= c._id %> ">car-details</a></td>
             <td> <form action="/cars/<%= c._id %>?_method=DELETE" method="POST">
-                <button type="submit">X</button>
+                <button type="submit">Delete car</button>
             </form> </td>
         </tr>
         <% }) %> 

@@ -1,50 +1,68 @@
 <%- include('../partials/header') %> 
 <link rel='stylesheet' href='/stylesheets/show.css' />
 <section>
-    <div>Name: </div>
-    <div><%= car.name %> </div>
-    <div>Model: </div>
-    <div> <%= car.model %> </div>
-    <div>Year: </div>
-    <div> <%= car.year %> </div>
-    <div> Price: </div>
-    <div> <%= car.price %> </div>
-    <div> Mileage: </div>
-    <div> <%= car.mileage %> </div>
-    <div><a href="/cars/<%= car._id %>/edit">Edit</a></div>
+    <span class="edit-section">
+        <div class="title">Name: &nbsp</div>
+        <div><%= car.name %> </div>
+    </span>
+    <span class="edit-section">
+        <div class="title">Model: &nbsp</div>
+        <div> <%= car.model %> </div>
+    </span>
+    <span class="edit-section">
+        <div class="title">Year: &nbsp</div>
+        <div> <%= car.year %> </div>
+    </span>
+    <span class="edit-section">
+        <div class="title"> Price: &nbsp</div>
+        <div> <%= car.price %> </div>
+    </span>
+    <span class="edit-section">
+        <div class="title"> Mileage: &nbsp  </div>
+        <div> <%=   car.mileage %> </div>
+    </span>
+    <span class="edit">
+        <div class="edit-button"><a href="/cars/<%= car._id %>/edit">Edit</a></div>
+    </span>
+    
 </section>
 
 <h2>Reviews</h2>
+
+<div class="main">
+
 <form action="/cars/<%= car._id %>/reviews " method="POST">
-    <label>
-        Review: 
-        <textarea name="content"></textarea>
-    </label>
-    <label>
-        Worth: 
-        <input type="checkbox" name="worth" checked>
-    </label>
-    <input type="submit" value="Add Review">
+    <span class="form-container">
+        <label>
+            <div class="review">Review:</div> 
+            <textarea name="content" class="input-box"></textarea>
+        </label>
+        <label class="worth">
+            Worth: 
+            <input type="checkbox" name="worth" checked>
+        </label>
+    </span>
+    <input type="submit" value="Add Review" class="add-review">    
 </form>
 
 <% if (car.reviews.length) { %> 
 <table>
     <thead>
-        <tr>
-            <th>Review: </th>
-            <th>Worth: </th>
+        <tr class="review-title">
+            <th>Review </th>
+            <th>Worth </th>
         </tr>
     </thead>
     <tbody>
         <% car.reviews.forEach( function(r) { %> 
         <tr>
             <td class="review-user"><img alt="avatar" src="<%= r.userAvatar %>" referrerpolicy="no-referrer" ><%= r.userName %></td>
-            <td><%= r.content %> </td>
-            <td><%= r.worth ? 'worth it' : 'Not worth' %> </td>
+            <td class="content"><%= r.content %> </td>
+            <td class="worth"><%= r.worth ? 'worth it' : 'Not worth' %> </td>
             <td>
                 <% if(user && user._id.equals(r.user)) { %> 
                     <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
-                        <button type="submit">X</button>
+                        <button type="submit" class="delete-review">delete</button>
                     </form>
                 <% } %> 
             </td>
@@ -52,6 +70,7 @@
         <% }) %> 
     </tbody>
 </table>
+</div>
 
 <% } else { %> 
     <h5>No Reviews</h5>
