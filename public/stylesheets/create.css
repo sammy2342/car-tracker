@@ -26,7 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 76%;
-    height: 100vh;
+    height: 93vh;
     justify-content: center;
     align-items: center;
     border-left: 3px solid rgb(55, 55, 55);
@@ -39,7 +39,7 @@ tbody {
 
 .new-container-1 { 
     width: 24%;
-    height: 100vh;
+    height: 93vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
