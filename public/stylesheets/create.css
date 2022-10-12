@@ -138,3 +138,11 @@ input[type=date]:focus::-webkit-datetime-edit {
     cursor: pointer;
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    height: 40px;
+  }
