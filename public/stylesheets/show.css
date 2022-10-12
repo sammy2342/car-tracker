@@ -19,6 +19,7 @@
     text-decoration: none;
     color: rgb(68, 102, 236);
   }
+
   nav {
     display: flex;
     flex-direction: row;
