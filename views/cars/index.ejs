@@ -14,7 +14,7 @@
             <th>Price</th>
             <th>Mileage</th>
             <th>Details</th>
-            <th>delete</th>
+            <th>Delete</th>
         </tr>
     </thead>
     <tbody>
@@ -26,9 +26,9 @@
             <td><%= c.year//.toLocaleDateString() %></td> 
             <td><%= c.price %> </td>
             <td><%= c.mileage %> </td>
-            <td><a href="/cars/<%= c._id %> ">car-details</a></td>
+            <td class="details"><a href="/cars/<%= c._id %> ">Details</a></td>
             <td> <form action="/cars/<%= c._id %>?_method=DELETE" method="POST">
-                <button type="submit">Delete car</button>
+                <button type="submit">Delete Car</button>
             </form> </td>
         </tr>
         <% }) %> 
