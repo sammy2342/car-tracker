@@ -12,7 +12,7 @@ router.post('/', isLoggedIn, carsCtrl.create)
 //localhost:3000/cars
 router.get('/', carsCtrl.index)
 // localhost:3000/cars/:id
-router.get('/:id', carsCtrl.show)
+router.get('/:id', isLoggedIn, carsCtrl.show)
 // localhost:3000/cars/:id
 router.delete('/:id', isLoggedIn, carsCtrl.delete)
 // localhost:3000/cars/:id/edit
