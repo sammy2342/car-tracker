@@ -85,4 +85,33 @@ nav {
     margin-top: 80px;
   }
 
-  
+  h4 { 
+    color: #fff;
+  }
+
+  .nav-bar { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  td > a { 
+    color: black;
+  }
+
+  td > a:hover { 
+    color: #fff;
+  }
+
+  button { 
+    background-color: rgba(233, 62, 62, 0.7);
+    padding: 3px;
+    border: 1px solid red;
+    background-color: ;
+  }
+
+  button:hover { 
+    background-color: red;
+    color: #fff;
+  }
+
