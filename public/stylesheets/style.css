@@ -122,27 +122,6 @@ tbody {
   height: 100px;
 } 
 
-/* #card-2 { 
-  margin-top: 90px;
-  background: linear-gradient(rgba(137, 137, 137, 0.3), rgba(168, 168, 168, 0.3)), url(./spofec-rollsroyce-wraith-black-badge-overdose-wallpaper-4k-2021-5k-8k-cars-5257.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#card-3 { 
-  background: linear-gradient(rgba(63, 63, 63, 0.3), rgba(63, 63, 63, 0.3)), url(./HD-wallpaper-bmw-m8-bavarian-car-car-cars-german-car-german-cars-gran-coupe-m8-gran-coupe.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#card-4 { 
-  background: linear-gradient(rgba(63, 63, 63, 0.3), rgba(63, 63, 63, 0.3)), url(./HD-wallpaper-shiny-black-lamborghini-car-blur-background-lamborghini.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
 
 .nav-bar { 
   display: flex;
