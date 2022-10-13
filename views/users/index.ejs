@@ -1,11 +1,19 @@
 <%- include('../partials/header') %> 
+<link rel='stylesheet' href='/stylesheets/userIndex.css' />
+<h1>All user that are sigend in </h1>
 
-<h1>All user that sigend in </h1>
-<% users.forEach( function(u) { %>
-    <tr>
-        <a href="/users/<%= u._id%> "><td class="all-user"><img src="<%= u.avatar %> " alt="avatar" referrerpolicy="no-referrer"><%= u.name %> </td></a>
-    </tr>
-    
-<% })  %> 
-
+<div id="table">
+    <div class="users">
+        <% users.forEach( function(u) { %>
+            <div class="user"> 
+                <a href="/users/<%= u._id%> " class="avatarr">
+                    <td class="all-user">
+                        <img src="<%= u.avatar %> " alt="avatar" referrerpolicy="no-referrer"><%= u.name %> 
+                    </td>
+                </a>
+            </div>
+            
+        <% })  %> 
+    </div>
+</div>
 <%- include('../partials/footer') %> 
