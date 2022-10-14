@@ -20,3 +20,9 @@
 
 # Website 
 * https://car-collection.onrender.com/
+
+# Ice boxs 
+* Light mode / dark mode 
+* betting system 
+* budget were a user can buy a car  
+* Sign in 
