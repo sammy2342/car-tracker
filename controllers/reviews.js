@@ -21,17 +21,7 @@ function create(req, res) {
     })
 }
 
-// Me 
-// function deleteCarReview(req, res, next) { 
-//     Car.findOne({'review': req.params.id, 'reviewsUser': req.user._id}, function(err, car) { 
-//         car.reviews.remove(req.params.id)
-//         car.save( function() { 
-//             res.redirect(`/cars/${car._id}`)
-//         })
-//     })
-// }
 
-// with hyak
 function deleteCarReview(req, res, next) {
     Car.findOne({'reviews._id': req.params.id, 'reviews.user': req.user._id}).then(function(car) {
       car.reviews.remove(req.params.id);
